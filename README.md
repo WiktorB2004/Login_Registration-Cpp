@@ -1,6 +1,7 @@
-# Login Registration System
+# Login Registration System - C++ Explore/Practice Project
 
-## Overview 
+## Overview
+Currently under development - many changes are about to be done.
 User login and register application which stores data in txt database file.
 
 ## Purpose
