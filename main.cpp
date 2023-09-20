@@ -56,14 +56,16 @@ bool userRegister() {
 	// TODO: Add verification - no spaces etc.
 	std::getline(std::cin, username);
 	if (username == "exit") return main();
+	while (!users.findByField("username", username).empty()) {
+		if (username == "exit") return main();
+		std::cout << "Username is taken or incorrect, try again or type exit: ";
+		std::getline(std::cin, username);
+		
+	}
+
 	std::cout << "Enter password: ";
 	std::getline(std::cin, password);
 	if (password == "exit") return main();
-
-	while (!users.findByField("username", username).empty()) {
-		std::cout << "Username is taken or incorrect, try again or type exit: ";
-		std::getline(std::cin, username);
-	}
 
 	std::unordered_map<std::string, std::string> newUser;
 	newUser["username"] = username;
@@ -84,23 +86,22 @@ bool userLogin() {
 	std::cout << "Log in to your account here, type exit to quit" << std::endl;
 	std::cout << "Enter username: ";
 	std::getline(std::cin, username);
+	if (username == "exit") return main();
 	while (users.findByField("username", username).empty()) {
-		clean();
+		if (username == "exit") return main();
 		std::cout << "Username is taken or incorrect, try again or type exit: ";
 		std::getline(std::cin, username);
-		if (username == "exit") return main();
+		
 	}
-	
-
 	auto userData = users.findByField("username", username);
 	std::cout << "Enter password: ";
 	std::getline(std::cin, password);
 
 	int tries = 0;
 	while (password != userData["password"] && tries < 3) {
+		if (password == "exit") return main();
 		std::cout << "Incorrect passowrd, try again (You have " << (3 - tries) << " left): ";
 		std::getline(std::cin, password);
-		if (password == "exit") return main();
 		tries++;
 	}
 
