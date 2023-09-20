@@ -9,4 +9,7 @@
     <ClInclude Include="database.h" />
     <ClInclude Include="errorHandler.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="hello.yml" />
+  </ItemGroup>
 </Project>

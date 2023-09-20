@@ -1,0 +1,18 @@
+name: Hello world
+
+on:
+  push:
+   branches:
+   - 'CICD_Test'
+  
+   pull_request:
+    branches:
+    - 'main'
+
+jobs:
+  hello:
+   runs-on: windows-latest
+
+   steps:
+   - name: Hello step
+     run: echo "Hello World"
