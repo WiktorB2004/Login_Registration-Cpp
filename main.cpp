@@ -3,14 +3,14 @@
 #include <stdlib.h>
 #include "database.h"
 
-// Database file must be clean (only at the moment - load functionality)
 Database users("accountsDB");
 
 void clean() { system("cls"); }
 
 bool userLogin();
 bool userRegister();
-void loggedScreen();
+void loggedScreen(std::unordered_map<std::string, std::string>& data);
+bool accountRemoval(std::unordered_map<std::string, std::string>& data);
 
 int main() {
 	clean();
@@ -98,7 +98,7 @@ bool userLogin() {
 	}
 
 	if (password == userData["password"]) {
-		loggedScreen();
+		loggedScreen(userData);
 	}
 	else {
 		main();
@@ -108,8 +108,50 @@ bool userLogin() {
 }
 
 
-void loggedScreen() {
+void loggedScreen(std::unordered_map<std::string, std::string>& data) {
 	clean();
-	std::cout << "Logged in successfuly";
-	std::cin.get();
+	std::string operation;
+	std::cout << "Logged in successfuly" << "\n\n"
+		<< "Your username: " << data["username"] << std::endl
+		<< "Your password: " << data["password"] << "\n\n";
+
+	std::cout << "Possible actions: " << std::endl
+		<< "1. Change password" << std::endl
+		<< "2. Remove you account" << std::endl
+		<< "3. Logout" << std::endl;
+	
+	std::getline(std::cin, operation);
+
+	if (operation == "1") {
+		// add logic to change password
+		std::cin.get();
+	}
+	else if (operation == "2") {
+		accountRemoval(data);
+	}
+	else if (operation == "3") {
+		main();
+	}
 };
+
+bool accountRemoval(std::unordered_map<std::string, std::string>& data) {
+	clean();
+	std::string operation;
+	std::cout << "If you want to delete your account enter your password: " << std::endl;
+	std::getline(std::cin, operation);
+	if (operation == data["password"]) {
+		if (users.removeRecord("username", data["username"])) {
+			std::cout << "Removal successful, push any button to go back to main screen" << std::endl;
+			std::cin.get();
+			main();
+		}
+		else {
+			std::cout << "Error occured, push any button to go back to main screen" << std::endl;
+			std::cin.get();
+			main();
+		}
+	}
+
+
+	return true;
+}
