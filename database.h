@@ -79,7 +79,7 @@ public:
 				temp << line << std::endl;
 			}
 			else {
-				temp << "DELETED USER:" << lineID << std::endl;
+				temp << "#DELETED USER:" << lineID << std::endl;
 			}
 			lineCount++;
 		}
@@ -99,8 +99,6 @@ public:
 
 		return true;
 	}
-
-
 
 	/// <summary>
 	/// Find record with provided field value
