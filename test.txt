@@ -1,3 +1,5 @@
-0;username: Wiktor;password: Password;
+DELETED USER:0
 1;username: Oliwier;password: Password;
-2;username: Wiktor2;password: Password2;
+DELETED USER:2
+3;username: Wiktor;password: Password;
+4;username: Wiktor2;password: Password2;

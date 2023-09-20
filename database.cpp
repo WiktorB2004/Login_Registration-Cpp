@@ -2,6 +2,12 @@
 #include <iostream>
 #include <string>
 
+/// <summary>
+/// Extract data from data string and put it into unordered_map.
+/// Data must be provided in key: value;key: value (...) format.
+/// </summary>
+/// <param name="line">string with data in correct format</param>
+/// <returns>unordered map with key value pairs from data string</returns>
 std::unordered_map<std::string, std::string> extractFromLine(std::string& line) {
 	std::string curr, key = "id";
 	std::unordered_map<std::string, std::string> res;

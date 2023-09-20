@@ -18,5 +18,8 @@ int main() {
 	users.addRecord(wiktor, checkField);
 	users.addRecord(oliwier, checkField);
 	users.addRecord(wiktor2, checkField);
-	users.findByField("password", "Password");
+	users.removeRecord("username", "Wiktor2");
+	users.removeRecord("username", "Wiktor");
+	users.addRecord(wiktor, checkField);
+	users.addRecord(wiktor2, checkField);
 }
