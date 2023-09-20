@@ -5,7 +5,7 @@
 - Currently under development - many changes are about to be done.
 - This is user login and register application which stores data in txt database file.
 
-## Purpose
+## Objective
 This project is created to review newly acquired C++ language knowledge, practice usage of Visual Studio and to use "Pragmatic Programmer" tips on making good software.
 The code may and most probably will not be perfect, because of my lack of experience with C++ language.
 Through making and correcting mistakes + writing the code I can easily gain missing experience alongside with learning dos and don'ts
