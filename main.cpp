@@ -3,13 +3,14 @@
 #include <stdlib.h>
 #include "database.h"
 
+// Database file must be clean (only at the moment - load functionality)
 Database users("accountsDB");
 
 void clean() { system("cls"); }
 
 bool userLogin();
 bool userRegister();
-void loggedScreen(std::unordered_map<std::string, std::string>& data);
+bool loggedScreen(std::unordered_map<std::string, std::string>& data);
 bool accountRemoval(std::unordered_map<std::string, std::string>& data);
 
 int main() {
@@ -24,12 +25,13 @@ int main() {
 	std::getline(std::cin, operation);
 
 	if (operation == "1") {
-		clean();
 		userLogin();
 	}
 	else if (operation == "2") {
-		clean();
 		userRegister();
+	}
+	else if (operation == "exit") {
+		return 0;
 	}
 	else {
 		std::string again;
@@ -38,26 +40,28 @@ int main() {
 			<< "try again? (Y/N)" << std::endl;
 		std::getline(std::cin, again);
 		if (again == "Y" || again == "y") {
-			clean();
-			main();
+			return main();
 		}
-		return 0;
 	}
 	return 0;
 }
 
 
 bool userRegister() {
+	clean();
 	std::string username, password;
+	std::cout << "Create your account here, type exit to quit" << std::endl;
 
 	std::cout << "Enter username: ";
 	// TODO: Add verification - no spaces etc.
 	std::getline(std::cin, username);
+	if (username == "exit") return main();
 	std::cout << "Enter password: ";
 	std::getline(std::cin, password);
+	if (password == "exit") return main();
 
 	while (!users.findByField("username", username).empty()) {
-		std::cout << "Username is taken, try again: ";
+		std::cout << "Username is taken or incorrect, try again or type exit: ";
 		std::getline(std::cin, username);
 	}
 
@@ -66,8 +70,7 @@ bool userRegister() {
 	newUser["password"] = password;
 	if (!users.addRecord(newUser)) {
 		std::cout << "Got error while adding user to database" << std::endl;
-		clean();
-		main();
+		return main();
 	}
 
 	userLogin();
@@ -78,13 +81,16 @@ bool userRegister() {
 bool userLogin() {
 	clean();
 	std::string username, password;
+	std::cout << "Log in to your account here, type exit to quit" << std::endl;
 	std::cout << "Enter username: ";
 	std::getline(std::cin, username);
 	while (users.findByField("username", username).empty()) {
 		clean();
-		std::cout << "Incorrect username, try again: ";
+		std::cout << "Username is taken or incorrect, try again or type exit: ";
 		std::getline(std::cin, username);
+		if (username == "exit") return main();
 	}
+	
 
 	auto userData = users.findByField("username", username);
 	std::cout << "Enter password: ";
@@ -94,6 +100,7 @@ bool userLogin() {
 	while (password != userData["password"] && tries < 3) {
 		std::cout << "Incorrect passowrd, try again (You have " << (3 - tries) << " left): ";
 		std::getline(std::cin, password);
+		if (password == "exit") return main();
 		tries++;
 	}
 
@@ -101,14 +108,13 @@ bool userLogin() {
 		loggedScreen(userData);
 	}
 	else {
-		main();
-		return false;
+		return main();
 	}
 	return true; 
 }
 
 
-void loggedScreen(std::unordered_map<std::string, std::string>& data) {
+bool loggedScreen(std::unordered_map<std::string, std::string>& data) {
 	clean();
 	std::string operation;
 	std::cout << "Logged in successfuly" << "\n\n"
@@ -130,8 +136,9 @@ void loggedScreen(std::unordered_map<std::string, std::string>& data) {
 		accountRemoval(data);
 	}
 	else if (operation == "3") {
-		main();
+		return main();
 	}
+	return true;
 };
 
 bool accountRemoval(std::unordered_map<std::string, std::string>& data) {
@@ -143,15 +150,14 @@ bool accountRemoval(std::unordered_map<std::string, std::string>& data) {
 		if (users.removeRecord("username", data["username"])) {
 			std::cout << "Removal successful, push any button to go back to main screen" << std::endl;
 			std::cin.get();
-			main();
-		}
-		else {
-			std::cout << "Error occured, push any button to go back to main screen" << std::endl;
-			std::cin.get();
-			main();
+			return main();
 		}
 	}
-
+	else {
+		std::cout << "Error occured, push any button to go back to main screen" << std::endl;
+		std::cin.get();
+		return main();
+	}
 
 	return true;
 }
