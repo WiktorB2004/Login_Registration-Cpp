@@ -25,6 +25,7 @@ of C++ language.
 	- Database file loading
 	- Optimize time and memory needed
 	- Admin user who can order users to change passwords, remove users etc.
+	- Write tests
 
 4. Final changes
 	- Make the code as good as possible
