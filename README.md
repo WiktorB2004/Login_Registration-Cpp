@@ -31,5 +31,6 @@ of C++ language.
 4. Final changes
 	- Make the code as good as possible
 	- Create full documentation on project (Readme.md)
+	- Redesign project folder structure
 
 ## Documentation
