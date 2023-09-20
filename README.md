@@ -1,8 +1,9 @@
 # Login Registration System - C++ Explore/Practice Project
 
 ## Overview
-Currently under development - many changes are about to be done.
-User login and register application which stores data in txt database file.
+- Start date: 19.09.2023
+- Currently under development - many changes are about to be done.
+- This is user login and register application which stores data in txt database file.
 
 ## Purpose
 This project is created to review newly acquired knowledge, practice usage of C++ and try to use "Pragmatic Programmer" tips on software development.
