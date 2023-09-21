@@ -4,8 +4,9 @@
 #include <string>
 #include <unordered_map>
 
-// TODO: Loading database files and operating on them, update operation, custom and comprehensive errorHandling,
+// TODO: Loading database files and operating on them, custom and comprehensive errorHandling,
 // Checking if file "filename" exists before using it as DB (ask if program can remove all the data from file or change name/exit)
+// Schema validation
 
 // database.cpp functions initialization
 std::unordered_map<std::string, std::string> extractFromLine(std::string& line);
@@ -18,10 +19,13 @@ private:
 
 public:
 	const std::string dbName;
+	std::vector<std::string> dbSchema;
 	std::string filename = dbName + ".txt";
 	
 	// Database class constructor, set name to default or provided value
-	Database(const std::string name = "defaultDB") : dbName(name) {}
+	Database(const std::string name = "defaultDB", const std::vector<std::string>& schema = {}) : dbName(name), dbSchema(schema) {
+		// Check if user provided schema, throw error if not
+	}
 
 	/// <summary>
 	/// Add records with specified key value pairs to the database file only if
@@ -44,15 +48,57 @@ public:
 
 		// Insert id + key-value pairs separated by semicolon and 
 		// increment count of records in database to know next ID
-		file << recordsNum;
-		for (auto& [key, value] : keyValue) {
-			file << ";" + key + ": " + value;
+		keyValue["id"] = std::to_string(recordsNum);
+		for (auto& key : dbSchema) {
+			file << key + ": " + keyValue[key] + ";";
 		}
 		recordsNum++;
+		file << std::endl;
 		// divide from the next record by endl and close the file
-		file << ";" << std::endl;
 		file.close();
 		return true;
+	}
+
+	bool editRecord(std::string id, std::unordered_map<std::string, std::string>& newData) {
+		// Function variables
+		std::string line;
+		int lineCount = 0, lineID = stoi(newData["id"]);
+		// Need char* to remove/rename file
+		char* originalFile = filename.data();
+		// create and open temp file
+		std::fstream temp;
+		file.open(filename, std::ios::in);
+		temp.open("temp.txt", std::ios::app);
+		// Write every line of db file except the one with ID to remove and
+		// put DELETED USER: ID on deleted record line
+		while (getline(file, line)) {
+			if (lineCount != lineID) {
+				temp << line << std::endl;
+			}
+			else {
+				for (auto& key : dbSchema) {
+					temp << key + ": " + newData[key] + ";";
+				}
+				temp << std::endl;
+			}
+			lineCount++;
+		}
+
+		temp.close();
+		file.close();
+		// Remove original db, rename temp to original DB file and
+		// check for errors
+		if (std::remove(originalFile) == -1) {
+			std::cout << "Edit failed because of file deletion failure" << std::endl;
+			return false;
+		}
+		if (std::rename("temp.txt", originalFile) == -1) {
+			std::cout << "Edit failed because of file rename failure" << std::endl;
+			return false;
+		}
+
+		return true;
+
 	}
 
 

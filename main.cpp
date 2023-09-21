@@ -3,8 +3,10 @@
 #include <stdlib.h>
 #include "database.h"
 
+
+std::vector<std::string> schema{ "id", "username", "password" };
 // Database file must be clean (only at the moment - load functionality)
-Database users("accountsDB");
+Database users("accountsDB", schema);
 
 void clean() { system("cls"); }
 
@@ -57,10 +59,9 @@ bool userRegister() {
 	std::getline(std::cin, username);
 	if (username == "exit") return main();
 	while (!users.findByField("username", username).empty()) {
-		if (username == "exit") return main();
 		std::cout << "Username is taken or incorrect, try again or type exit: ";
 		std::getline(std::cin, username);
-		
+		if (username == "exit") return main();
 	}
 
 	std::cout << "Enter password: ";
@@ -130,8 +131,16 @@ bool loggedScreen(std::unordered_map<std::string, std::string>& data) {
 	std::getline(std::cin, operation);
 
 	if (operation == "1") {
-		// add logic to change password
-		std::cin.get();
+		std::string newPassword;
+		std::cout << "Enter your new password or type exit: ";
+		std::getline(std::cin, newPassword);
+		if (newPassword == "exit") return loggedScreen(data);
+		data["password"] = newPassword;
+		if (!users.editRecord(data["id"], data)) {
+			std::cout << "Edit failed, click any button to continue" << std::endl;
+			std::cin.get();
+		}
+		return loggedScreen(data);
 	}
 	else if (operation == "2") {
 		accountRemoval(data);
