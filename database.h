@@ -4,7 +4,7 @@
 #include <string>
 #include <unordered_map>}
 
-// TODO: Loading database files and operating on them, custom and comprehensive errorHandling,
+// TODO: custom and comprehensive errorHandling,
 // Schema validation
 
 // database.cpp functions initialization
@@ -52,9 +52,9 @@ public:
 	}
 
 
+
 	/// <summary>
-	/// Add records with specified key value pairs to the database file only if
-	/// the specified record does not exist
+	/// Add records with specified key value pairs to the database file only if the specified record does not exist
 	/// </summary>
 	/// <param name="keyValue">key-value pairs that are going to be put inside database</param>
 	/// <param name="checkField">field of the database by which availability is checked eg. is username taken</param>
@@ -84,6 +84,13 @@ public:
 		return true;
 	}
 
+
+	/// <summary>
+	/// Edit record from database with specified id value
+	/// </summary>
+	/// <param name="id">Record id to match and edit</param>
+	/// <param name="value">Unordered list containing updated user data</param>
+	/// <returns>returns true-success, false-failure</returns>
 	bool editRecord(std::string id, std::unordered_map<std::string, std::string>& newData) {
 		// Function variables
 		std::string line;

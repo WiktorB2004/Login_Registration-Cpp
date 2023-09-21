@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include "database.h"
 
-
 Database users;
 
 void clean() { system("cls"); }
@@ -14,6 +13,11 @@ bool userRegister();
 bool loggedScreen(std::unordered_map<std::string, std::string>& data);
 bool accountRemoval(std::unordered_map<std::string, std::string>& data);
 
+
+/// <summary>
+/// Initializes database, check for errors and go to main screen
+/// </summary>
+/// <returns>main screen function - entire application logic</returns>
 int main() {
 	std::vector<std::string> schema{ "id", "username", "password" };
 	if (!users.init(schema)) {
@@ -23,6 +27,11 @@ int main() {
 	return mainScreen();
 }
 
+
+/// <summary>
+/// Main screen of the application, gives access to login/register
+/// </summary>
+/// <returns>true - success, false - failure</returns>
 bool mainScreen() {
 	clean();
 	std::string operation;
@@ -56,6 +65,10 @@ bool mainScreen() {
 }
 
 
+/// <summary>
+/// Handles registering user
+/// </summary>
+/// <returns>true - success, false - failure</returns>
 bool userRegister() {
 	clean();
 	std::string username, password;
@@ -88,6 +101,12 @@ bool userRegister() {
 	return true;
 }
 
+
+
+/// <summary>
+/// Handles logging of the user
+/// </summary>
+/// <returns>true - success, false - failure</returns>
 bool userLogin() {
 	clean();
 	std::string username, password;
@@ -123,6 +142,11 @@ bool userLogin() {
 }
 
 
+/// <summary>
+/// Screen showing user its data and gives ability to manipulate it.
+/// </summary>
+/// <param name="data">User data</param>
+/// <returns>true - success, false - failure</returns>
 bool loggedScreen(std::unordered_map<std::string, std::string>& data) {
 	clean();
 	std::string operation;
@@ -158,6 +182,12 @@ bool loggedScreen(std::unordered_map<std::string, std::string>& data) {
 	return true;
 };
 
+
+/// <summary>
+/// Removes user data after confirming by password
+/// </summary>
+/// <param name="data">User data to delete</param>
+/// <returns>true - success, false - failure</returns>
 bool accountRemoval(std::unordered_map<std::string, std::string>& data) {
 	clean();
 	std::string operation;
