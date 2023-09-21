@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.27)
+project(loginRegister)
+include_directories("${PROJECT_SOURCE_DIR}")
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED On)
+add_executable(loginRegister ${PROJECT_SOURCE_DIR}/main.cpp)
