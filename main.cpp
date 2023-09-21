@@ -4,21 +4,28 @@
 #include "database.h"
 
 
-std::vector<std::string> schema{ "id", "username", "password" };
-// Database file must be clean (only at the moment - load functionality)
-Database users("accountsDB", schema);
+Database users;
 
 void clean() { system("cls"); }
 
+bool mainScreen();
 bool userLogin();
 bool userRegister();
 bool loggedScreen(std::unordered_map<std::string, std::string>& data);
 bool accountRemoval(std::unordered_map<std::string, std::string>& data);
 
 int main() {
+	std::vector<std::string> schema{ "id", "username", "password" };
+	if (!users.init(schema)) {
+		std::cout << "Unable to continue, click any button to restart" << std::endl;
+		std::cin.get();
+	}
+	return mainScreen();
+}
+
+bool mainScreen() {
 	clean();
 	std::string operation;
-
 	std::cout << "Welcome to the portal" << std::endl
 		<< "1. Login" << std::endl
 		<< "2. Register" << std::endl
@@ -42,10 +49,10 @@ int main() {
 			<< "try again? (Y/N)" << std::endl;
 		std::getline(std::cin, again);
 		if (again == "Y" || again == "y") {
-			return main();
+			return mainScreen();
 		}
 	}
-	return 0;
+	return true;
 }
 
 
@@ -57,23 +64,23 @@ bool userRegister() {
 	std::cout << "Enter username: ";
 	// TODO: Add verification - no spaces etc.
 	std::getline(std::cin, username);
-	if (username == "exit") return main();
+	if (username == "exit") return mainScreen();
 	while (!users.findByField("username", username).empty()) {
 		std::cout << "Username is taken or incorrect, try again or type exit: ";
 		std::getline(std::cin, username);
-		if (username == "exit") return main();
+		if (username == "exit") return mainScreen();
 	}
 
 	std::cout << "Enter password: ";
 	std::getline(std::cin, password);
-	if (password == "exit") return main();
+	if (password == "exit") return mainScreen();
 
 	std::unordered_map<std::string, std::string> newUser;
 	newUser["username"] = username;
 	newUser["password"] = password;
 	if (!users.addRecord(newUser)) {
 		std::cout << "Got error while adding user to database" << std::endl;
-		return main();
+		return mainScreen();
 	}
 
 	userLogin();
@@ -87,9 +94,9 @@ bool userLogin() {
 	std::cout << "Log in to your account here, type exit to quit" << std::endl;
 	std::cout << "Enter username: ";
 	std::getline(std::cin, username);
-	if (username == "exit") return main();
+	if (username == "exit") return mainScreen();
 	while (users.findByField("username", username).empty()) {
-		if (username == "exit") return main();
+		if (username == "exit") return mainScreen();
 		std::cout << "Username is taken or incorrect, try again or type exit: ";
 		std::getline(std::cin, username);
 		
@@ -100,7 +107,7 @@ bool userLogin() {
 
 	int tries = 0;
 	while (password != userData["password"] && tries < 3) {
-		if (password == "exit") return main();
+		if (password == "exit") return mainScreen();
 		std::cout << "Incorrect passowrd, try again (You have " << (3 - tries) << " left): ";
 		std::getline(std::cin, password);
 		tries++;
@@ -110,7 +117,7 @@ bool userLogin() {
 		loggedScreen(userData);
 	}
 	else {
-		return main();
+		return mainScreen();
 	}
 	return true; 
 }
@@ -146,7 +153,7 @@ bool loggedScreen(std::unordered_map<std::string, std::string>& data) {
 		accountRemoval(data);
 	}
 	else if (operation == "3") {
-		return main();
+		return mainScreen();
 	}
 	return true;
 };
@@ -160,13 +167,13 @@ bool accountRemoval(std::unordered_map<std::string, std::string>& data) {
 		if (users.removeRecord("username", data["username"])) {
 			std::cout << "Removal successful, push any button to go back to main screen" << std::endl;
 			std::cin.get();
-			return main();
+			return mainScreen();
 		}
 	}
 	else {
 		std::cout << "Error occured, push any button to go back to main screen" << std::endl;
 		std::cin.get();
-		return main();
+		return mainScreen();
 	}
 
 	return true;

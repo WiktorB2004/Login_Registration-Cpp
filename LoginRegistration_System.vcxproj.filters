@@ -4,12 +4,13 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="database.cpp" />
     <ClCompile Include="errorHandler.cpp" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="database.h" />
     <ClInclude Include="errorHandler.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="hello.yml" />
+    <Text Include="CMakeLists.txt" />
   </ItemGroup>
 </Project>

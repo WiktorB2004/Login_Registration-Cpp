@@ -2,10 +2,9 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <unordered_map>
+#include <unordered_map>}
 
 // TODO: Loading database files and operating on them, custom and comprehensive errorHandling,
-// Checking if file "filename" exists before using it as DB (ask if program can remove all the data from file or change name/exit)
 // Schema validation
 
 // database.cpp functions initialization
@@ -18,14 +17,40 @@ private:
 	int recordsNum = 0;
 
 public:
-	const std::string dbName;
+	std::string dbName;
 	std::vector<std::string> dbSchema;
-	std::string filename = dbName + ".txt";
+	std::string filename;
 	
 	// Database class constructor, set name to default or provided value
-	Database(const std::string name = "defaultDB", const std::vector<std::string>& schema = {}) : dbName(name), dbSchema(schema) {
-		// Check if user provided schema, throw error if not
+	Database() {};
+
+
+	bool init(std::vector<std::string>& schema) {
+		if (!schema.size()) return false;
+		dbSchema = schema;
+		std::cout << "Provide name for database file. (Default: defaultDB.txt)" << std::endl;
+		std::getline(std::cin, dbName);
+		filename = dbName.size() ? dbName + ".txt" : "defaultDB.txt";
+		std::string operation;
+		file.open(filename, std::ios::in);
+		if (file.is_open()) {
+			std::cout << "File " + dbName + " currently exist, do you want to erase it's content? (Y/N)" << std::endl;
+			std::getline(std::cin, operation);
+			file.close();
+			if (operation == "Y" || operation == "y") {
+				file.open(filename, std::ios::out | std::ios::trunc);
+				file.close();
+				return true;
+			}
+			return false;
+		}
+		else {
+			file.open(filename, std::ios::app);
+			file.close();
+			return true;
+		}
 	}
+
 
 	/// <summary>
 	/// Add records with specified key value pairs to the database file only if
@@ -69,8 +94,8 @@ public:
 		std::fstream temp;
 		file.open(filename, std::ios::in);
 		temp.open("temp.txt", std::ios::app);
-		// Write every line of db file except the one with ID to remove and
-		// put DELETED USER: ID on deleted record line
+		// Write every line of db file except the one with ID to edit
+		// Put edited on its place
 		while (getline(file, line)) {
 			if (lineCount != lineID) {
 				temp << line << std::endl;
