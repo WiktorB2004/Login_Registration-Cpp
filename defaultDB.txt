@@ -1,0 +1,3 @@
+#DELETED USER:0
+id: 1;username: sylwia;password: wiktor;
+id: 2;username: grzes;password: sylwia;

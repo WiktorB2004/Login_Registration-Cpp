@@ -54,8 +54,7 @@ bool mainScreen() {
 	else {
 		std::string again;
 		clean();
-		std::cout << "Incorrect Input" << std::endl
-			<< "try again? (Y/N)" << std::endl;
+		std::cout << "Incorrect Input, try again ? (Y / N)" << std::endl;
 		std::getline(std::cin, again);
 		if (again == "Y" || again == "y") {
 			return mainScreen();
