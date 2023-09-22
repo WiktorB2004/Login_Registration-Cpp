@@ -17,7 +17,7 @@ of C++ language.
 	- ~~Function documentation and comments~~
 	- ~~Basic error handling~~
 
-**2. Analysis of the code, initial refactoring**
+2. Analysis of the code and initial refactoring
 	- Check the code for bad practices
 	- Find better ways to solve problems
 	- Add custom and comprehensive error handling
