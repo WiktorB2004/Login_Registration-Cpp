@@ -132,12 +132,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="database.cpp" />
-    <ClCompile Include="errorHandler.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="database.h" />
-    <ClInclude Include="errorHandler.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />

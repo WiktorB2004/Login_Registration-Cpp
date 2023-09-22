@@ -1,3 +1,0 @@
-0;username: wiktor;password: wiktor;
-1;username: sylwia;password: sylwia;
-2;username: grzesiek;password: grzesiek;
