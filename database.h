@@ -43,6 +43,7 @@ public:
 		dbSchema = schema;
 		std::cout << "Provide name for database file. (Default: defaultDB.txt): ";
 		std::getline(std::cin, dbName);
+		if (dbName == "exit") return true;
 		filename = dbName.size() ? dbName + ".txt" : "defaultDB.txt";
 		std::string operation;
 		file.open(filename, std::ios::in);
