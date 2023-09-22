@@ -12,7 +12,7 @@ Through making and correcting mistakes + writing the code I can easily gain miss
 of C++ language.
 
 ## Project Phases (Currently in 2nd)
-* *1. Write basic code:* *
+* *1. Write basic code: (Completed 22.09.2023)* * 
 	- ~~Basic logic and functionality~~
 	- ~~Function documentation and comments~~
 	- ~~Basic error handling~~
@@ -32,5 +32,13 @@ of C++ language.
 	- Make the code as good as possible
 	- Create full documentation on project (Readme.md)
 	- Redesign project folder structure
+
+## Video and Screenshoots
+
+https://github.com/WiktorB2004/Login-Registration-Cpp/assets/62223421/a23696e4-d52a-4f83-8c06-fb21af80658a
+
+This is how the database file looks after actions presented in the video:
+
+![usersDBss](https://github.com/WiktorB2004/Login-Registration-Cpp/assets/62223421/884540ec-2bbd-40f7-8430-8aa50e676ab1)
 
 ## Documentation
