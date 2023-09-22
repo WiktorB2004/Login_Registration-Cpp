@@ -31,6 +31,12 @@ std::unordered_map<std::string, std::string> extractFromLine(std::string& line) 
 }
 
 
+/// <summary>
+/// Validates user inputed data with database schema
+/// </summary>
+/// <param name="schema">Database schema</param>
+/// <param name="data">Check if provided data matches database schema</param>
+/// <returns></returns>
 bool validData(const std::vector<std::string>& schema, const std::unordered_map<std::string, std::string>& data) {
 	if (schema.size() != data.size()) return false;
 	for (auto& pair : data) {
