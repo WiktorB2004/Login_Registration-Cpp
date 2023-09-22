@@ -12,7 +12,7 @@ Through making and correcting mistakes + writing the code I can easily gain miss
 of C++ language.
 
 ## Project Phases (Currently in 2nd)
-* *1. Write basic code:* *
+* *1. Write basic code: (Completed 22.09.2023)* * 
 	- ~~Basic logic and functionality~~
 	- ~~Function documentation and comments~~
 	- ~~Basic error handling~~
