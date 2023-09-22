@@ -35,7 +35,7 @@ of C++ language.
 
 ## Video and Screenshoots
 
-https://github.com/WiktorB2004/Login-Registration-Cpp/assets/62223421/c949e466-4c0f-41e9-9239-b4e8ebe3e733
+https://github.com/WiktorB2004/Login-Registration-Cpp/assets/62223421/a23696e4-d52a-4f83-8c06-fb21af80658a
 
 This is how the database file looks after actions presented in the video:
 
