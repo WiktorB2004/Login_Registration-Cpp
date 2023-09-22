@@ -2,29 +2,42 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <unordered_map>}
+#include <unordered_map>
 
 // TODO: custom and comprehensive errorHandling,
-// Schema validation
 
 // database.cpp functions initialization
+
+bool validData(const std::vector<std::string>& schema, const std::unordered_map<std::string, std::string>& data);
 std::unordered_map<std::string, std::string> extractFromLine(std::string& line);
+
 
 class Database
 {
 private:
-	std::fstream file;
 	int recordsNum = 0;
-
-public:
+	std::fstream file;
 	std::string dbName;
 	std::vector<std::string> dbSchema;
 	std::string filename;
-	
-	// Database class constructor, set name to default or provided value
+
+	void schemaValidate(std::unordered_map<std::string, std::string>& data) {
+		if (!validData(dbSchema, data)) {
+			std::cout << "Provided data is not matching with database schema, please provide correct data" << std::endl;
+			std::cin.get();
+		}
+	}
+
+public:
+	// Database class constructor
 	Database() {};
 
 
+	/// <summary>
+	/// Initialize database with provided schema
+	/// </summary>
+	/// <param name="schema">Vector containing strings of data kays in wanted order</param>
+	/// <returns>true - success, false - failure</returns>
 	bool init(std::vector<std::string>& schema) {
 		if (!schema.size()) return false;
 		dbSchema = schema;
@@ -52,17 +65,19 @@ public:
 	}
 
 
-
 	/// <summary>
 	/// Add records with specified key value pairs to the database file only if the specified record does not exist
 	/// </summary>
-	/// <param name="keyValue">key-value pairs that are going to be put inside database</param>
+	/// <param name="userData">key-value pairs that are going to be put inside database</param>
 	/// <param name="checkField">field of the database by which availability is checked eg. is username taken</param>
 	/// <returns>returns true - success, false - failure</returns>
-	bool addRecord(std::unordered_map<std::string, std::string>& keyValue, std::string checkField = "") {
+	bool addRecord(std::unordered_map<std::string, std::string>& userData, std::string checkField = "") {
+		userData["id"] = std::to_string(recordsNum);
+		schemaValidate(userData);
+
 		// Check if there's no record with provided value by checkField eg. is username free
 		if (checkField.size()) {
-			auto result = findByField(checkField, keyValue[checkField]);
+			auto result = findByField(checkField, userData[checkField]);
 			if (!result.empty()) {
 				std::cout << "Item already exists" << std::endl;
 				return false;
@@ -73,9 +88,9 @@ public:
 
 		// Insert id + key-value pairs separated by semicolon and 
 		// increment count of records in database to know next ID
-		keyValue["id"] = std::to_string(recordsNum);
+		
 		for (auto& key : dbSchema) {
-			file << key + ": " + keyValue[key] + ";";
+			file << key + ": " + userData[key] + ";";
 		}
 		recordsNum++;
 		file << std::endl;
@@ -92,6 +107,7 @@ public:
 	/// <param name="value">Unordered list containing updated user data</param>
 	/// <returns>returns true-success, false-failure</returns>
 	bool editRecord(std::string id, std::unordered_map<std::string, std::string>& newData) {
+		schemaValidate(newData);
 		// Function variables
 		std::string line;
 		int lineCount = 0, lineID = stoi(newData["id"]);
@@ -178,13 +194,14 @@ public:
 		return true;
 	}
 
+
 	/// <summary>
 	/// Find record with provided field value
 	/// </summary>
 	/// <param name="field">Record field to return</param>
 	/// <param name="value">Record value to return</param>
 	/// <returns>Unordered map of key value pairs of the found record or
-	///  empty map when record do not exist</returns>
+	/// empty map when record do not exist</returns>
 	std::unordered_map<std::string, std::string> findByField(std::string field, std::string value) {
 		// Function variables
 		std::string line, result;

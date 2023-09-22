@@ -29,3 +29,12 @@ std::unordered_map<std::string, std::string> extractFromLine(std::string& line) 
 	}
 	return res;
 }
+
+
+bool validData(const std::vector<std::string>& schema, const std::unordered_map<std::string, std::string>& data) {
+	if (schema.size() != data.size()) return false;
+	for (auto& pair : data) {
+		if (std::find(schema.begin(), schema.end(), pair.first) == schema.end()) return false;
+	}
+	return true;
+}

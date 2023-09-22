@@ -134,12 +134,6 @@
     <ClCompile Include="database.cpp" />
     <ClCompile Include="errorHandler.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="test.cpp">
-      <GenerateXMLDocumentationFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</GenerateXMLDocumentationFiles>
-      <GenerateXMLDocumentationFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateXMLDocumentationFiles>
-      <GenerateXMLDocumentationFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</GenerateXMLDocumentationFiles>
-      <GenerateXMLDocumentationFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateXMLDocumentationFiles>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="database.h" />
