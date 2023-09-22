@@ -1,4 +1,4 @@
-# Login Registration System - C++ Explore/Practice Project
+# Login Registration System - C++ Practice Project
 
 ## Overview
 - Start date: 19.09.2023
