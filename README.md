@@ -1,4 +1,4 @@
-# Login Registration System - C++ Explore/Practice Project
+# Login Registration System - C++ Practice Project
 
 ## Overview
 - Start date: 19.09.2023
@@ -25,7 +25,6 @@ of C++ language.
 3. Implement more features + Optimize
 	- Database file loading or possibility of erasing current file data
 	- Optimize time and memory needed
-	- Admin user who can order users to change passwords, remove users etc.
 	- ~~Manually test the program~~
 
 4. Final changes
