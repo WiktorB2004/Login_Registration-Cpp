@@ -33,4 +33,12 @@ of C++ language.
 	- Create full documentation on project (Readme.md)
 	- Redesign project folder structure
 
+## Video and Screenshoots
+
+https://github.com/WiktorB2004/Login-Registration-Cpp/assets/62223421/c949e466-4c0f-41e9-9239-b4e8ebe3e733
+
+This is how the database file looks after actions presented in the video:
+
+![usersDBss](https://github.com/WiktorB2004/Login-Registration-Cpp/assets/62223421/884540ec-2bbd-40f7-8430-8aa50e676ab1)
+
 ## Documentation
