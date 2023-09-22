@@ -1,3 +1,0 @@
-C:/Users/48695/Desktop/Projekty/LoginRegistration_System/CMakeFiles/loginRegister.dir
-C:/Users/48695/Desktop/Projekty/LoginRegistration_System/CMakeFiles/ALL_BUILD.dir
-C:/Users/48695/Desktop/Projekty/LoginRegistration_System/CMakeFiles/ZERO_CHECK.dir

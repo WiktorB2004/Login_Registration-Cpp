@@ -4,7 +4,7 @@
 #include <string>
 #include <unordered_map>
 
-// TODO: custom and comprehensive errorHandling,
+// TODO: custom and comprehensive errorHandling
 
 // database.cpp functions initialization
 
@@ -38,7 +38,7 @@ public:
 	/// </summary>
 	/// <param name="schema">Vector containing strings of data kays in wanted order</param>
 	/// <returns>true - success, false - failure</returns>
-	bool init(std::vector<std::string>& schema) {
+	bool init(std::vector<std::string>& schema = std::vector<std::string>{}) {
 		if (!schema.size()) return false;
 		dbSchema = schema;
 		std::cout << "Provide name for database file. (Default: defaultDB.txt): ";
