@@ -18,8 +18,8 @@ of C++ language.
 	- ~~Basic error handling~~
 
 2. Analysis of the code and initial refactoring
-	- Check the code for bad practices and note/repair them
-	- Find better ways to solve problems
+	- ~~Check the code for bad practices and note/repair them~~
+	- ~~Try to find better ways to solve problems - note them~~
 
 3. Implement more features + Optimize
 	- ~~Possibility of erasing current file data if name is taken~~
@@ -27,7 +27,7 @@ of C++ language.
 	- ~~Manually test the program~~
 
 4. Final changes
-	- Redesign project folder structure
+	- ~~Redesign project folder structure~~
 
 ## Video and Screenshoots
 
