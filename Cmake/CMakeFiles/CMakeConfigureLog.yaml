@@ -24,7 +24,7 @@ events:
       The output was:
       0
       Wersja programu MSBuild 17.7.2+d6990bcfa dla .NET Framework
-      Kompilacja rozpocz©\xc2\x88a si© 23.09.2023 18:29:40.
+      Kompilacja rozpocz©\xc2\x88a si© 23.09.2023 18:32:50.
       
       Projekt "C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\3.27.6\\CompilerIdC\\CompilerIdC.vcxproj" w w©«le 1 (domy\xc2\x98lne elementy docelowe).
       PrepareForBuild:
@@ -52,7 +52,7 @@ events:
           Ostrzeľenia: 0
           Liczba b\xc2\x88©d˘w: 0
       
-      Czas, kt˘ry up\xc2\x88ynĄ\xc2\x88: 00:00:01.09
+      Czas, kt˘ry up\xc2\x88ynĄ\xc2\x88: 00:00:01.12
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -78,7 +78,7 @@ events:
       The output was:
       0
       Wersja programu MSBuild 17.7.2+d6990bcfa dla .NET Framework
-      Kompilacja rozpocz©\xc2\x88a si© 23.09.2023 18:29:42.
+      Kompilacja rozpocz©\xc2\x88a si© 23.09.2023 18:32:51.
       
       Projekt "C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\3.27.6\\CompilerIdCXX\\CompilerIdCXX.vcxproj" w w©«le 1 (domy\xc2\x98lne elementy docelowe).
       PrepareForBuild:
@@ -106,7 +106,7 @@ events:
           Ostrzeľenia: 0
           Liczba b\xc2\x88©d˘w: 0
       
-      Czas, kt˘ry up\xc2\x88ynĄ\xc2\x88: 00:00:00.83
+      Czas, kt˘ry up\xc2\x88ynĄ\xc2\x88: 00:00:00.85
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -125,8 +125,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/CMakeScratch/TryCompile-61op1l"
-      binary: "C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/CMakeScratch/TryCompile-61op1l"
+      source: "C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/CMakeScratch/TryCompile-p8evj6"
+      binary: "C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/CMakeScratch/TryCompile-p8evj6"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -135,39 +135,39 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/CMakeScratch/TryCompile-61op1l'
+        Change Dir: 'C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/CMakeScratch/TryCompile-p8evj6'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_03aeb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e61a5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Wersja programu MSBuild 17.7.2+d6990bcfa dla .NET Framework
-        Kompilacja rozpocz©\xc2\x88a si© 23.09.2023 18:29:43.
+        Kompilacja rozpocz©\xc2\x88a si© 23.09.2023 18:32:53.
         
-        Projekt "C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\CMakeScratch\\TryCompile-61op1l\\cmTC_03aeb.vcxproj" w w©«le 1 (domy\xc2\x98lne elementy docelowe).
+        Projekt "C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\CMakeScratch\\TryCompile-p8evj6\\cmTC_e61a5.vcxproj" w w©«le 1 (domy\xc2\x98lne elementy docelowe).
         PrepareForBuild:
-          Tworzenie katalogu "cmTC_03aeb.dir\\Debug\\".
-          Tworzenie katalogu "C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\CMakeScratch\\TryCompile-61op1l\\Debug\\".
-          Tworzenie katalogu "cmTC_03aeb.dir\\Debug\\cmTC_03aeb.tlog\\".
+          Tworzenie katalogu "cmTC_e61a5.dir\\Debug\\".
+          Tworzenie katalogu "C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\CMakeScratch\\TryCompile-p8evj6\\Debug\\".
+          Tworzenie katalogu "cmTC_e61a5.dir\\Debug\\cmTC_e61a5.tlog\\".
         InitializeBuildStatus:
-          Trwa tworzenie "cmTC_03aeb.dir\\Debug\\cmTC_03aeb.tlog\\unsuccessfulbuild", poniewaľ okre\xc2\x98lono "AlwaysCreate".
-          Modyfikowanie "cmTC_03aeb.dir\\Debug\\cmTC_03aeb.tlog\\unsuccessfulbuild".
+          Trwa tworzenie "cmTC_e61a5.dir\\Debug\\cmTC_e61a5.tlog\\unsuccessfulbuild", poniewaľ okre\xc2\x98lono "AlwaysCreate".
+          Modyfikowanie "cmTC_e61a5.dir\\Debug\\cmTC_e61a5.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_03aeb.dir\\Debug\\\\" /Fd"cmTC_03aeb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e61a5.dir\\Debug\\\\" /Fd"cmTC_e61a5.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32822 for x64
           CMakeCCompilerABI.c
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_03aeb.dir\\Debug\\\\" /Fd"cmTC_03aeb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e61a5.dir\\Debug\\\\" /Fd"cmTC_e61a5.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\CMakeScratch\\TryCompile-61op1l\\Debug\\cmTC_03aeb.exe" /INCREMENTAL /ILK:"cmTC_03aeb.dir\\Debug\\cmTC_03aeb.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/CMakeScratch/TryCompile-61op1l/Debug/cmTC_03aeb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/CMakeScratch/TryCompile-61op1l/Debug/cmTC_03aeb.lib" /MACHINE:X64  /machine:x64 cmTC_03aeb.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_03aeb.vcxproj -> C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\CMakeScratch\\TryCompile-61op1l\\Debug\\cmTC_03aeb.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\CMakeScratch\\TryCompile-p8evj6\\Debug\\cmTC_e61a5.exe" /INCREMENTAL /ILK:"cmTC_e61a5.dir\\Debug\\cmTC_e61a5.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/CMakeScratch/TryCompile-p8evj6/Debug/cmTC_e61a5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/CMakeScratch/TryCompile-p8evj6/Debug/cmTC_e61a5.lib" /MACHINE:X64  /machine:x64 cmTC_e61a5.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_e61a5.vcxproj -> C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\CMakeScratch\\TryCompile-p8evj6\\Debug\\cmTC_e61a5.exe
         FinalizeBuildStatus:
-          Usuwanie pliku "cmTC_03aeb.dir\\Debug\\cmTC_03aeb.tlog\\unsuccessfulbuild".
-          Modyfikowanie "cmTC_03aeb.dir\\Debug\\cmTC_03aeb.tlog\\cmTC_03aeb.lastbuildstate".
-        Kompilowanie projektu "C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\CMakeScratch\\TryCompile-61op1l\\cmTC_03aeb.vcxproj" wykonane (domy\xc2\x98lne elementy docelowe).
+          Usuwanie pliku "cmTC_e61a5.dir\\Debug\\cmTC_e61a5.tlog\\unsuccessfulbuild".
+          Modyfikowanie "cmTC_e61a5.dir\\Debug\\cmTC_e61a5.tlog\\cmTC_e61a5.lastbuildstate".
+        Kompilowanie projektu "C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\CMakeScratch\\TryCompile-p8evj6\\cmTC_e61a5.vcxproj" wykonane (domy\xc2\x98lne elementy docelowe).
         
         Kompilacja powiod\xc2\x88a si©.
             Ostrzeľenia: 0
             Liczba b\xc2\x88©d˘w: 0
         
-        Czas, kt˘ry up\xc2\x88ynĄ\xc2\x88: 00:00:00.85
+        Czas, kt˘ry up\xc2\x88ynĄ\xc2\x88: 00:00:00.83
         
       exitCode: 0
   -
@@ -179,8 +179,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/CMakeScratch/TryCompile-sn3uen"
-      binary: "C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/CMakeScratch/TryCompile-sn3uen"
+      source: "C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/CMakeScratch/TryCompile-bd7k9n"
+      binary: "C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/CMakeScratch/TryCompile-bd7k9n"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -189,39 +189,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/CMakeScratch/TryCompile-sn3uen'
+        Change Dir: 'C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/CMakeScratch/TryCompile-bd7k9n'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_cf819.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_cc3c2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Wersja programu MSBuild 17.7.2+d6990bcfa dla .NET Framework
-        Kompilacja rozpocz©\xc2\x88a si© 23.09.2023 18:29:44.
+        Kompilacja rozpocz©\xc2\x88a si© 23.09.2023 18:32:54.
         
-        Projekt "C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\CMakeScratch\\TryCompile-sn3uen\\cmTC_cf819.vcxproj" w w©«le 1 (domy\xc2\x98lne elementy docelowe).
+        Projekt "C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\CMakeScratch\\TryCompile-bd7k9n\\cmTC_cc3c2.vcxproj" w w©«le 1 (domy\xc2\x98lne elementy docelowe).
         PrepareForBuild:
-          Tworzenie katalogu "cmTC_cf819.dir\\Debug\\".
-          Tworzenie katalogu "C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\CMakeScratch\\TryCompile-sn3uen\\Debug\\".
-          Tworzenie katalogu "cmTC_cf819.dir\\Debug\\cmTC_cf819.tlog\\".
+          Tworzenie katalogu "cmTC_cc3c2.dir\\Debug\\".
+          Tworzenie katalogu "C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\CMakeScratch\\TryCompile-bd7k9n\\Debug\\".
+          Tworzenie katalogu "cmTC_cc3c2.dir\\Debug\\cmTC_cc3c2.tlog\\".
         InitializeBuildStatus:
-          Trwa tworzenie "cmTC_cf819.dir\\Debug\\cmTC_cf819.tlog\\unsuccessfulbuild", poniewaľ okre\xc2\x98lono "AlwaysCreate".
-          Modyfikowanie "cmTC_cf819.dir\\Debug\\cmTC_cf819.tlog\\unsuccessfulbuild".
+          Trwa tworzenie "cmTC_cc3c2.dir\\Debug\\cmTC_cc3c2.tlog\\unsuccessfulbuild", poniewaľ okre\xc2\x98lono "AlwaysCreate".
+          Modyfikowanie "cmTC_cc3c2.dir\\Debug\\cmTC_cc3c2.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cf819.dir\\Debug\\\\" /Fd"cmTC_cf819.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cc3c2.dir\\Debug\\\\" /Fd"cmTC_cc3c2.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32822 for x64
           CMakeCXXCompilerABI.cpp
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cf819.dir\\Debug\\\\" /Fd"cmTC_cf819.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cc3c2.dir\\Debug\\\\" /Fd"cmTC_cc3c2.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\CMakeScratch\\TryCompile-sn3uen\\Debug\\cmTC_cf819.exe" /INCREMENTAL /ILK:"cmTC_cf819.dir\\Debug\\cmTC_cf819.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/CMakeScratch/TryCompile-sn3uen/Debug/cmTC_cf819.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/CMakeScratch/TryCompile-sn3uen/Debug/cmTC_cf819.lib" /MACHINE:X64  /machine:x64 cmTC_cf819.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_cf819.vcxproj -> C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\CMakeScratch\\TryCompile-sn3uen\\Debug\\cmTC_cf819.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\CMakeScratch\\TryCompile-bd7k9n\\Debug\\cmTC_cc3c2.exe" /INCREMENTAL /ILK:"cmTC_cc3c2.dir\\Debug\\cmTC_cc3c2.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/CMakeScratch/TryCompile-bd7k9n/Debug/cmTC_cc3c2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/CMakeScratch/TryCompile-bd7k9n/Debug/cmTC_cc3c2.lib" /MACHINE:X64  /machine:x64 cmTC_cc3c2.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_cc3c2.vcxproj -> C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\CMakeScratch\\TryCompile-bd7k9n\\Debug\\cmTC_cc3c2.exe
         FinalizeBuildStatus:
-          Usuwanie pliku "cmTC_cf819.dir\\Debug\\cmTC_cf819.tlog\\unsuccessfulbuild".
-          Modyfikowanie "cmTC_cf819.dir\\Debug\\cmTC_cf819.tlog\\cmTC_cf819.lastbuildstate".
-        Kompilowanie projektu "C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\CMakeScratch\\TryCompile-sn3uen\\cmTC_cf819.vcxproj" wykonane (domy\xc2\x98lne elementy docelowe).
+          Usuwanie pliku "cmTC_cc3c2.dir\\Debug\\cmTC_cc3c2.tlog\\unsuccessfulbuild".
+          Modyfikowanie "cmTC_cc3c2.dir\\Debug\\cmTC_cc3c2.tlog\\cmTC_cc3c2.lastbuildstate".
+        Kompilowanie projektu "C:\\Users\\48695\\Desktop\\Projekty\\LoginRegistration_System\\Cmake\\CMakeFiles\\CMakeScratch\\TryCompile-bd7k9n\\cmTC_cc3c2.vcxproj" wykonane (domy\xc2\x98lne elementy docelowe).
         
         Kompilacja powiod\xc2\x88a si©.
             Ostrzeľenia: 0
             Liczba b\xc2\x88©d˘w: 0
         
-        Czas, kt˘ry up\xc2\x88ynĄ\xc2\x88: 00:00:00.80
+        Czas, kt˘ry up\xc2\x88ynĄ\xc2\x88: 00:00:00.82
         
       exitCode: 0
 ...
