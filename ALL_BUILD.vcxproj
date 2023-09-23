@@ -173,6 +173,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\48695\Desktop\Projekty\LoginRegistration_System\database.vcxproj">
+      <Project>{1575F738-CB14-31DE-A710-AC248DDD2844}</Project>
+      <Name>database</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\48695\Desktop\Projekty\LoginRegistration_System\loginRegister.vcxproj">
       <Project>{C7365725-311E-3D23-BEB2-DEAE900B647B}</Project>
       <Name>loginRegister</Name>
