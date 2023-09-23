@@ -21,7 +21,7 @@ bool accountRemoval(std::unordered_map<std::string, std::string>& data);
 int main() {
 	std::vector<std::string> schema{ "id", "username", "password" };
 	if (!users.init(schema)) {
-		std::cout << "Unable to continue, click any button to restart" << std::endl;
+		std::cout << "Unable to continue, click any button to restar" << std::endl;
 		std::cin.get();
 	}
 	return mainScreen();
