@@ -49,7 +49,7 @@ public:
 		std::string operation;
 		file.open(filename, std::ios::in);
 		if (file.is_open()) {
-			std::cout << "File " + dbName + " currently exist, do you want to erase it's content? (Y/N)" << std::endl;
+			std::cout << "File " + dbName + ".txt currently exist, do you want to erase it's content? (Y/N)" << std::endl;
 			std::getline(std::cin, operation);
 			file.close();
 			if (operation == "Y" || operation == "y") {
