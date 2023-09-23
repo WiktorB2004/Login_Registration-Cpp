@@ -1,6 +1,6 @@
-#include "database.h"
 #include <iostream>
 #include <string>
+#include "database.h"
 
 /// <summary>
 /// Extract data from data string and put it into unordered_map.

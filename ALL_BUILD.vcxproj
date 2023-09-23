@@ -173,13 +173,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\48695\Desktop\Projekty\LoginRegistration_System\database.vcxproj">
-      <Project>{1575F738-CB14-31DE-A710-AC248DDD2844}</Project>
-      <Name>database</Name>
+    <ProjectReference Include="C:\Users\48695\Desktop\Projekty\LoginRegistration_System\apps\app.vcxproj">
+      <Project>{1A39B750-1DF3-3878-BEE3-A92CEF4313EC}</Project>
+      <Name>app</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\48695\Desktop\Projekty\LoginRegistration_System\loginRegister.vcxproj">
-      <Project>{C7365725-311E-3D23-BEB2-DEAE900B647B}</Project>
-      <Name>loginRegister</Name>
+    <ProjectReference Include="C:\Users\48695\Desktop\Projekty\LoginRegistration_System\src\database_library.vcxproj">
+      <Project>{15AFF0F2-FE6D-3671-86FC-E027408D9F19}</Project>
+      <Name>database_library</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
