@@ -40,7 +40,7 @@ This is how the database file looks after actions presented in the video:
 ## Conclusion
 
 1. Each feature should be handled by dedicated class
-	- User input should be handled by dedicated function/class instead of screen functions, so it wont be impossible to write unit tests
+	- User input should be handled by dedicated function/class instead of screen functions, so it wont be hard/impossible to write unit tests
 	- Dedicated class for each functionality would make it easier to test/debug the code and understand the application logic
 2. Handle data using classes
 	- It would be easier and more efficient to handle user data if it was stored in the User class, and datbase would operate on the user class
