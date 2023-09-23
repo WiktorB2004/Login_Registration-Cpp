@@ -27,7 +27,7 @@ of C++ language.
 	- ~~Manually test the program~~
 
 4. Final changes
-	- Redesign project folder structure
+	- ~~Redesign project folder structure~~
 
 ## Video and Screenshoots
 
