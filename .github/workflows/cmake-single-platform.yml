@@ -9,6 +9,7 @@ on:
     paths-ignore:
      - "*.md"
      - ".gitignore"
+     - ".github/workflows/cmake-single-platform.yml"
   pull_request:
     branches: 
       - "master"
