@@ -8,7 +8,8 @@ on:
      - "master"
     paths-ignore:
      - "*.md"
-     - ".gitignore" 
+     - ".gitignore"
+     - "/workflows"
   pull_request:
     branches: 
       - "master"

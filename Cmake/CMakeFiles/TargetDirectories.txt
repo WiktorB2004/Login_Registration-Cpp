@@ -1,0 +1,4 @@
+C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/database.dir
+C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/loginRegister.dir
+C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/ALL_BUILD.dir
+C:/Users/48695/Desktop/Projekty/LoginRegistration_System/Cmake/CMakeFiles/ZERO_CHECK.dir

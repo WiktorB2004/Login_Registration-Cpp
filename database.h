@@ -4,7 +4,6 @@
 #include <string>
 #include <unordered_map>
 
-// TODO: custom and comprehensive errorHandling
 
 // database.cpp functions initialization
 
