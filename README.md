@@ -12,24 +12,21 @@ Through making and correcting mistakes + writing the code I can easily gain miss
 of C++ language.
 
 ## Project Phases (Currently in 2nd)
-* *1. Write basic code: (Completed 22.09.2023)* * 
+1. Write basic code: (Completed 22.09.2023)
 	- ~~Basic logic and functionality~~
 	- ~~Function documentation and comments~~
 	- ~~Basic error handling~~
 
 2. Analysis of the code and initial refactoring
-	- Check the code for bad practices
+	- Check the code for bad practices and note in /repair them
 	- Find better ways to solve problems
-	- Add custom and comprehensive error handling
 
 3. Implement more features + Optimize
-	- Database file loading or possibility of erasing current file data
+	- ~~Possibility of erasing current file data if name is taken~~
 	- Optimize time and memory needed
 	- ~~Manually test the program~~
 
 4. Final changes
-	- Make the code as good as possible
-	- Create full documentation on project (Readme.md)
 	- Redesign project folder structure
 
 ## Video and Screenshoots
@@ -40,4 +37,4 @@ This is how the database file looks after actions presented in the video:
 
 ![usersDBss](https://github.com/WiktorB2004/Login-Registration-Cpp/assets/62223421/884540ec-2bbd-40f7-8430-8aa50e676ab1)
 
-## Documentation
+## Conclusions
