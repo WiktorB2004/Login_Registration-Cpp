@@ -1,2 +1,0 @@
-#DELETED USER:0
-id: 1;username: grzes;password: wiktor;
