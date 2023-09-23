@@ -18,7 +18,7 @@ of C++ language.
 	- ~~Basic error handling~~
 
 2. Analysis of the code and initial refactoring
-	- Check the code for bad practices and note in /repair them
+	- Check the code for bad practices and note/repair them
 	- Find better ways to solve problems
 
 3. Implement more features + Optimize
@@ -37,4 +37,18 @@ This is how the database file looks after actions presented in the video:
 
 ![usersDBss](https://github.com/WiktorB2004/Login-Registration-Cpp/assets/62223421/884540ec-2bbd-40f7-8430-8aa50e676ab1)
 
-## Conclusions
+## Conclusion
+
+1. Each feature should be handled by dedicated class
+	- User input should be handled by dedicated function/class instead of screen functions, so it wont be impossible to write unit tests
+	- Dedicated class for each functionality would make it easier to test/debug the code and understand the application logic
+2. Handle data using classes
+	- It would be easier and more efficient to handle user data if it was stored in the User class, and datbase would operate on the user class
+3. Thinking about testing while designing/writing the code
+	- Make code easy to test
+
+In the process of making the project I've learned:
+	- Basic usage of CMake, GoogleTest
+	- GitHub workflow - creating GitHub actions
+	- Gained experience with using C++ and Visual Studio
+
