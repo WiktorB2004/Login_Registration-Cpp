@@ -48,7 +48,7 @@ This is how the database file looks after actions presented in the video:
 	- Make code easy to test
 
 In the process of making the project I've learned:
-	- Basic usage of CMake, GoogleTest
+	- Basic usage of CMake (single and cross-platform), GoogleTest
 	- GitHub workflow - creating GitHub actions
 	- Gained experience with using C++, Visual Studio and Git Version control
 
