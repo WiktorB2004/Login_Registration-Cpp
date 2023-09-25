@@ -46,6 +46,7 @@ This is how the database file looks after actions presented in the video:
 	- It would be easier and more efficient to handle user data if it was stored in the User class, and datbase would operate on the user class
 3. Thinking about testing while designing/writing the code
 	- Make code easy to test
+4. Define class functions in className.cpp and only declare them in className.h
 
 In the process of making the project I've learned:
 	- Basic usage of CMake (single and cross-platform), GoogleTest
