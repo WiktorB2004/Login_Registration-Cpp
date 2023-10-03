@@ -2,7 +2,6 @@
 
 ## Overview
 - Start date: 19.09.2023
-- Currently under development - many changes are about to be done.
 - This is user login and register application which stores data in txt database file.
 
 ## Objective
@@ -52,4 +51,5 @@ In the process of making the project I've learned:
 	- Basic usage of CMake (single and cross-platform), GoogleTest
 	- GitHub workflow - creating GitHub actions
 	- Gained experience with using C++, Visual Studio and Git Version control
+ 	- A lot of lessons from bad practices and their analysis of this projects
 
