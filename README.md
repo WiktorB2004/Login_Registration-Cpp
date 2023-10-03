@@ -2,7 +2,7 @@
 
 ## Overview
 - Completed Project of login registration terminal application in c++
-- This project is my first contact with C++, so Its main purpose was to write any code and then analyze and learn from it.
+- This project is my first contact with C++, so its main purpose was to write any code and then analyze and learn from it.
 
 ## Objective
 This project is created to review newly acquired C++ language knowledge, practice usage of Visual Studio and to use "Pragmatic Programmer" tips on making good software.
