@@ -1,4 +1,4 @@
-# Login Registration System - C++ Practice Project
+# Login Registration System - C++ Learning Project
 
 ## Overview
 - Completed Project of login registration terminal application in c++
